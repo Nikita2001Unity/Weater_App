@@ -16,24 +16,23 @@ const UpdateBackgroud = () =>{
     const evening = [17,18,19,20];
     const night = [21,22,23,24,1,2,3,4];
 
-  for (let i = 0; i < 24; i++) {
       if (morning.includes(time)) {
+          console.log('Morninf is now');
           document.body.style.backgroundImage = 'https://img1.goodfon.ru/wallpaper/nbig/e/84/firewatch-game-priroda.jpg';
       }
-      else if(noon[i] == time){
+      else if(noon.includes(time)){
           console.log('noon')
         document.body.style.backgroundImage = 'url(https://poster.nicefon.ru/2018_12/02/1080x610/255663d8ecee9ece8c03c0.jpg)';
       }
       else if(evening.includes(time)){
           console.log('evening')
-          document.body.style.backgroundImage = 'https://img1.goodfon.ru/original/1366x768/1/f5/firewatch-igra-minimalizm.jpg'
+          document.body.style.backgroundImage = 'url(https://img1.goodfon.ru/original/1366x768/1/f5/firewatch-igra-minimalizm.jpg)'
 
       }
-      else if(night[i] == time){
-          document.body.style.backgroundImage = 'https://img4.goodfon.ru/wallpaper/nbig/9/47/firewatch-campo-santo-solntse-zakat-kholmy-vid-les-peizazh-i.jpg';
+      else if(night.includes(time)){
+          document.body.style.backgroundImage = 'url(https://img4.goodfon.ru/wallpaper/nbig/9/47/firewatch-campo-santo-solntse-zakat-kholmy-vid-les-peizazh-i.jpg)';
       }
   }    
-}
 
 UpdateBackgroud();
 
